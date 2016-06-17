@@ -6,5 +6,11 @@
 
 #IncludeRegexTransform: 
 
+../include/geometry.h
+
+/Users/derekmallon/Projects/C++/geometry/src/geometry.cpp
+geometry.h
+/Users/derekmallon/Projects/C++/geometry/src/geometry.h
+
 /Users/derekmallon/Projects/C++/geometry/src/main.cpp
 

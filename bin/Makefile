@@ -78,17 +78,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/local/Cellar/cmake/3.4.3/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/derekmallon/Projects/C++/geometry/bin/CMakeFiles /Users/derekmallon/Projects/C++/geometry/bin/CMakeFiles/progress.marks
@@ -122,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Test
+
+# Build rule for target.
+Test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Test
+.PHONY : Test
+
+# fast build rule for target.
+Test/fast:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/build
+.PHONY : Test/fast
+
+#=============================================================================
 # Target rules for targets named demo
 
 # Build rule for target.
@@ -146,6 +148,33 @@ geometry: cmake_check_build_system
 geometry/fast:
 	$(MAKE) -f CMakeFiles/geometry.dir/build.make CMakeFiles/geometry.dir/build
 .PHONY : geometry/fast
+
+src/geometry.o: src/geometry.cpp.o
+
+.PHONY : src/geometry.o
+
+# target to build an object file
+src/geometry.cpp.o:
+	$(MAKE) -f CMakeFiles/geometry.dir/build.make CMakeFiles/geometry.dir/src/geometry.cpp.o
+.PHONY : src/geometry.cpp.o
+
+src/geometry.i: src/geometry.cpp.i
+
+.PHONY : src/geometry.i
+
+# target to preprocess a source file
+src/geometry.cpp.i:
+	$(MAKE) -f CMakeFiles/geometry.dir/build.make CMakeFiles/geometry.dir/src/geometry.cpp.i
+.PHONY : src/geometry.cpp.i
+
+src/geometry.s: src/geometry.cpp.s
+
+.PHONY : src/geometry.s
+
+# target to generate assembly for a file
+src/geometry.cpp.s:
+	$(MAKE) -f CMakeFiles/geometry.dir/build.make CMakeFiles/geometry.dir/src/geometry.cpp.s
+.PHONY : src/geometry.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -177,6 +206,60 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/geometry.dir/build.make CMakeFiles/geometry.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+test/geometrytest.o: test/geometrytest.cpp.o
+
+.PHONY : test/geometrytest.o
+
+# target to build an object file
+test/geometrytest.cpp.o:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/test/geometrytest.cpp.o
+.PHONY : test/geometrytest.cpp.o
+
+test/geometrytest.i: test/geometrytest.cpp.i
+
+.PHONY : test/geometrytest.i
+
+# target to preprocess a source file
+test/geometrytest.cpp.i:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/test/geometrytest.cpp.i
+.PHONY : test/geometrytest.cpp.i
+
+test/geometrytest.s: test/geometrytest.cpp.s
+
+.PHONY : test/geometrytest.s
+
+# target to generate assembly for a file
+test/geometrytest.cpp.s:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/test/geometrytest.cpp.s
+.PHONY : test/geometrytest.cpp.s
+
+test/testmain.o: test/testmain.cpp.o
+
+.PHONY : test/testmain.o
+
+# target to build an object file
+test/testmain.cpp.o:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/test/testmain.cpp.o
+.PHONY : test/testmain.cpp.o
+
+test/testmain.i: test/testmain.cpp.i
+
+.PHONY : test/testmain.i
+
+# target to preprocess a source file
+test/testmain.cpp.i:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/test/testmain.cpp.i
+.PHONY : test/testmain.cpp.i
+
+test/testmain.s: test/testmain.cpp.s
+
+.PHONY : test/testmain.s
+
+# target to generate assembly for a file
+test/testmain.cpp.s:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/test/testmain.cpp.s
+.PHONY : test/testmain.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -185,12 +268,21 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... test"
+	@echo "... Test"
 	@echo "... demo"
 	@echo "... geometry"
+	@echo "... src/geometry.o"
+	@echo "... src/geometry.i"
+	@echo "... src/geometry.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... test/geometrytest.o"
+	@echo "... test/geometrytest.i"
+	@echo "... test/geometrytest.s"
+	@echo "... test/testmain.o"
+	@echo "... test/testmain.i"
+	@echo "... test/testmain.s"
 .PHONY : help
 
 
