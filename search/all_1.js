@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['bottomleft',['bottomLeft',['../structgeometry_1_1_a_a_b_b_square.html#af1ae8ca2ede8d7d3d029bf47a9af4bc2',1,'geometry::AABBSquare']]],
-  ['bottomright',['bottomRight',['../structgeometry_1_1_a_a_b_b_square.html#a5da3c1da8e6e8ca7c0bea39a7d08afb4',1,'geometry::AABBSquare']]]
+  ['bottomleft',['bottomLeft',['../classgeometry_1_1_a_a_b_b.html#adeb2bbb3a57a7009567a6f2538e2d1b3',1,'geometry::AABB']]],
+  ['bottomright',['bottomRight',['../classgeometry_1_1_a_a_b_b.html#ad03e0a38772c22a987e7867cb099e353',1,'geometry::AABB']]]
 ];

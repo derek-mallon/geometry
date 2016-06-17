@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['intersectsaabb',['intersectsAABB',['../structgeometry_1_1_a_a_b_b_square.html#a0b93e2cff30672e210b612ba5ed491d2',1,'geometry::AABBSquare']]]
+  ['center',['center',['../classgeometry_1_1_a_a_b_b.html#a4581787629a6f38659ad9329067d511d',1,'geometry::AABB::center(Point center)'],['../classgeometry_1_1_a_a_b_b.html#a309986a232f049377b56d8bc0976c3a9',1,'geometry::AABB::center() const ']]]
 ];

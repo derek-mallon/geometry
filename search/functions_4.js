@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['xy',['XY',['../structgeometry_1_1_x_y.html#ab3e0f1d43b9294f34b559ad20102ce0a',1,'geometry::XY']]]
+  ['point',['Point',['../structgeometry_1_1_point.html#a40da7edc05a0c72fc0e782785db18225',1,'geometry::Point']]]
 ];

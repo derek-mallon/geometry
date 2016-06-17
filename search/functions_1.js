@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['containspoint',['containsPoint',['../structgeometry_1_1_a_a_b_b_square.html#aad412ad8757866e376082d4db1832b42',1,'geometry::AABBSquare']]]
+  ['bottomleft',['bottomLeft',['../classgeometry_1_1_a_a_b_b.html#adeb2bbb3a57a7009567a6f2538e2d1b3',1,'geometry::AABB']]],
+  ['bottomright',['bottomRight',['../classgeometry_1_1_a_a_b_b.html#ad03e0a38772c22a987e7867cb099e353',1,'geometry::AABB']]]
 ];
