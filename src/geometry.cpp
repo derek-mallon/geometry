@@ -1,4 +1,5 @@
 #include "geometry.h"
+using namespace geometry;
 bool AABBSquare::containsPoint(XY point) const{
 	if(point.x > center.x - halfDimension && point.x < center.x + halfDimension && point.y > center.y - halfDimension && point.y < center.y + halfDimension) return true;
 	return false;

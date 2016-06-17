@@ -1,7 +1,7 @@
-/*! \file Main test file for the geometry namespace */
+/*! \file This is the tests for the geometry namespace */
 #include "catch.hpp"
 #include "geometry.h"
-using geometry;
+using namespace geometry;
 /*! This tests the AABBSquare::containsPoint function */
 SCENARIO("AABBSquare contains a point.") {
 	GIVEN("There is an AABBSquare of size 5 located at the origin and a point also located at the origin.") {

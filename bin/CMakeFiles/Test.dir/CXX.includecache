@@ -240,7 +240,7 @@ iomanip
 assert.h
 -
 
-/Users/derekmallon/Projects/C++/geometry/test/geomtrytest.cpp
+/Users/derekmallon/Projects/C++/geometry/test/geometrytest.cpp
 catch.hpp
 /Users/derekmallon/Projects/C++/geometry/test/catch.hpp
 geometry.h
