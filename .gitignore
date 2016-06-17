@@ -25,6 +25,7 @@
 *.app
 # Scripts
 scripts
+.ycm_extra_conf.py
 #Doxygen stuff
 Doxyfile
 Doxyfiles
