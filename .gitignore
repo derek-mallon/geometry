@@ -1,4 +1,5 @@
-
+#swapfiles
+.*.swp
 # Compiled Object files
 *.slo
 *.lo
