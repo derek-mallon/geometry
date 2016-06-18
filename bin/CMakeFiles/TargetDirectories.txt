@@ -1,3 +1,0 @@
-/Users/derekmallon/Projects/C++/geometry/bin/CMakeFiles/Test.dir
-/Users/derekmallon/Projects/C++/geometry/bin/CMakeFiles/demo.dir
-/Users/derekmallon/Projects/C++/geometry/bin/CMakeFiles/geometry.dir
